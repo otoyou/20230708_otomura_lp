@@ -21,7 +21,7 @@
 
 body {
     max-width: 1500px;
-    min-width: 1000px;
+    /*min-width: 1000px;*/
     margin: auto;
 }
 
@@ -261,7 +261,8 @@ table.content02__table th {
 /* Service */
 .content04 {
     padding: 50px 10% 0 10%;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
+    margin: 50px auto 50px auto;
 }
 
 .content04__caption {
@@ -281,7 +282,7 @@ table.content02__table th {
     justify-content: center;
     margin-top: 20px;
     max-width: 800px;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .content04__card01 {
@@ -489,13 +490,11 @@ table.content06__table td {
 
 .content07__img {
     display: flex;
-    /*max-height: 300px;*/
+    width: 100%;
 }
 
 .content07__info--box {
-    position: relative;
-    width: 100%;
-        /* 任意の横幅を指定 */
+    width: 50%;
 }
 
 .content07__info {
@@ -519,13 +518,16 @@ a.content07__info--a {
     text-decoration: none;
 }
 
+.content07__interview--box {
+    width: 50%;
+}
+
 .content07__interview {
     display: block;
     position: relative;
     background: url(../img/interview.png) no-repeat center/cover;
     width: 50vw;
-    height: auto;
-    /*height: 40vh;*/
+    height: 40vh;
 }
 
 .content07__interview--a {
