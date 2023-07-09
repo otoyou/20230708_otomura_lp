@@ -6,21 +6,27 @@
 .content05,
 .content06,
 .content07 {
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-h2 {
+.content02__caption,
+.content03__caption,
+.content04__caption,
+.content05__caption,
+.content06__caption,
+.content07__caption {
     color: #747474;
     font-size: 20px;
 }
 
 body {
-    padding-top: 50px;
-    /* headerのheight 50px */
+    max-width: 1500px;
+    min-width: 1000px;
+    margin: auto;
 }
 
 /* header */
-header {
+.header {
     position: fixed;
     /* headerを固定する */
     top: 0;
@@ -28,11 +34,6 @@ header {
     width: 100%;
     background-color: #fff;
     z-index: 100;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header {
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -68,16 +69,33 @@ li {
 
 .content01__title {
     position: absolute;
-    top: 60%;
-    left: 20%;
+    top: 18%;
+    left: 18%;
     font-size: 20px;
     color: #b31767;
 }
 
-.text {
+.text_0 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Handlee', cursive;
+    display: block;
+    margin-bottom: 80px;
+}
+
+.text_1 {
     color: #009094;
 }
 
+.text_2 {
+    color: #009094;
+}
+
+.text_3 {
+    font-size: 12px;
+    color: #b2b2b2;
+}
+/*修正2023/07/09
 .content01::before {
     font-family: 'Handlee', cursive;
     content: "Commit to the \A for everyone";
@@ -112,7 +130,7 @@ li {
     display: block;
     white-space: pre;
 }
-
+*/
 .content01__img {
     margin-left: auto;
     display: block;
@@ -125,6 +143,7 @@ li {
     justify-content: center;
     align-items: center;
     padding-bottom: 80px;
+    padding-top: 50px;
 }
 
 .content02__caption {
@@ -162,23 +181,31 @@ table.content02__table th {
     background-color: #fefefe;
     border-bottom: 1px solid #a1a1a1;
     text-align: left;
+    padding: 20px 10px;
     padding-left: 120px;
     position: relative;
+    display: inline-block;
 }
 
 .content02__td::before {
     content: "ニュース";
     color: #fff;
-    background-color: #b31767;
-    width: 80px;
-    height: 22px;
-    border-radius: 30px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
     position: absolute;
     left: 15px;
-    transform: translate(0, -28%);
+    transform: translate(15%, -10%);
+    z-index: 1;
+}
+
+.content02__td::after {
+    content: "";
+    background-color: #b31767;
+    width: 80px;
+    height: 24px;
+    border-radius: 30px;
+    position: absolute;
+    left: 15px;
+    transform: translate(0, -20%);
+    z-index: 0;
 }
 
 .content02__table::before {
@@ -258,6 +285,7 @@ table.content02__table th {
 .content04__card01 {
     display: inline-block;
     background-color: #b31767;
+    color: #fff;
     width: 50%;
     padding: 30px;
 }
@@ -281,12 +309,14 @@ table.content02__table th {
 .content04__card02 {
     display: flex;
     background-color: #B35B8B;
+    color: #fff;
     padding: 30px;
 }
 
 .content04__card03 {
     display: flex;
     background-color: #B2889E;
+    color: #fff;
     padding: 30px;
 }
 
@@ -340,10 +370,12 @@ table.content02__table th {
     width: 30%;
     margin: 50px 0;
     background-color: #fff;
+    border-radius: 10px;
 }
 
 .content05__img {
     width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
 .content05__card::before {
@@ -352,6 +384,7 @@ table.content02__table th {
     width: 20%;
     height: 10%;
     position: absolute;
+    border-radius: 10px 0 0 0;
 }
 
 .content05__card::after {
@@ -407,6 +440,7 @@ a.content05__button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 .content06__caption {
@@ -448,7 +482,7 @@ table.content06__table td {
 
 /* Contact */
 .content07 {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .content07__img {
