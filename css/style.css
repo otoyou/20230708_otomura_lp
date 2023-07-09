@@ -1,0 +1,556 @@
+/* 共通のスタイル */
+.content01,
+.content02,
+.content03,
+.content04,
+.content05,
+.content06,
+.content07 {
+    padding-top: 50px;
+}
+
+h2 {
+    color: #747474;
+    font-size: 20px;
+}
+
+body {
+    padding-top: 50px;
+    /* headerのheight 50px */
+}
+
+/* header */
+header {
+    position: fixed;
+    /* headerを固定する */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+img.header__logo {
+    width: 150px;
+    margin: 2px auto auto 20px;
+}
+
+ul.header__navi {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+    align-items: center;
+}
+
+li {
+    margin-left: 40px;
+    width: 60px;
+    text-align: center;
+}
+
+.header__a {
+    color: #8a8a8a;
+    text-decoration: none;
+}
+
+/* main */
+.content01 {
+    position: relative;
+}
+
+.content01__title {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 20px;
+    color: #b31767;
+}
+
+.text {
+    color: #009094;
+}
+
+.content01::before {
+    font-family: 'Handlee', cursive;
+    content: "Commit to the \A for everyone";
+    color: #b31767;
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    top: 130px;
+    left: 200px;
+    white-space: pre;
+}
+
+.content01__title::before {
+    font-family: 'Handlee', cursive;
+    content: "growth";
+    color: #009094;
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    left: 336px;
+    top: -176px;
+    white-space: pre;
+}
+
+.content01__title::after {
+    font-size: 12px;
+    color: #b2b2b2;
+    content: "Educational Technology Company \A estra inc since 2019";
+    position: absolute;
+    top: 30px;
+    width: 500px;
+    display: block;
+    white-space: pre;
+}
+
+.content01__img {
+    margin-left: auto;
+    display: block;
+    width: 60%;
+}
+
+/* News */
+.content02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.content02__caption {
+    position: relative;
+}
+
+.content02__caption::before {
+    content: "News";
+    font-family: 'Handlee', cursive;
+    position: absolute;
+    top: -20px;
+    color: #b31767;
+}
+
+.content02__table {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    position: relative;
+    border-top: solid 2px #747474;
+    border-bottom: solid 2px #747474
+}
+
+table.content02__table th {
+    color: #b2b2b2;
+    border-bottom: solid 1px #a1a1a1;
+    padding: 20px 10px;
+}
+
+.content02__td {
+    width: 500px;
+    color: #b2b2b2;
+    background-color: #fefefe;
+    border-bottom: 1px solid #a1a1a1;
+    text-align: left;
+    padding-left: 120px;
+    position: relative;
+}
+
+.content02__td::before {
+    content: "ニュース";
+    color: #fff;
+    background-color: #b31767;
+    width: 80px;
+    height: 22px;
+    border-radius: 30px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 15px;
+    transform: translate(0, -28%);
+}
+
+.content02__table::before {
+    content: "";
+    display: block;
+    /*width: 200px;*/
+    height: 2px;
+    background-color: #747474;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+/* About */
+.content03 {
+    background-color: #f5f5f5;
+    padding-top: 50px;
+}
+
+.content03__caption {
+    text-align: center;
+    position: relative;
+}
+
+.content03__caption::before {
+    content: "About";
+    font-family: 'Handlee', cursive;
+    position: absolute;
+    top: -20px;
+    right: 50%;
+    color: #b31767;
+}
+
+.content03__box {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.content03__comment {
+    color: #b2b2b2;
+}
+
+.content03__p {
+    margin: 50px;
+}
+
+.content03__img {
+    width: 30%;
+    margin: 50px;
+}
+
+/* Service */
+.content04 {
+    padding: 50px 10% 0 10%;
+    margin-bottom: 50px;
+}
+
+.content04__caption {
+    position: relative;
+}
+
+.content04__caption::before {
+    content: "Service";
+    font-family: 'Handlee', cursive;
+    position: absolute;
+    top: -20px;
+    color: #b31767;
+}
+
+.content04__card--box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content04__card01 {
+    display: inline-block;
+    background-color: #b31767;
+    width: 50%;
+    padding: 30px;
+}
+
+.content04__card01__img {
+    width: 25%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.content04__card01__cap {
+    text-align: center;
+    margin: 20px;
+}
+
+.content04__card--set {
+    display: inline-block;
+    width: 50%;
+}
+
+.content04__card02 {
+    display: flex;
+    background-color: #B35B8B;
+    padding: 30px;
+}
+
+.content04__card03 {
+    display: flex;
+    background-color: #B2889E;
+    padding: 30px;
+}
+
+.content04__card02__img,
+.content04__card03__img {
+    display: inline-block;
+    width: 25%;
+}
+
+.content04__cap--box {
+    display: inline-block;
+}
+
+.content04__card02__cap,
+.content04__card03__cap {
+    margin: 20px;
+}
+
+.content04__card02__text,
+.content04__card03__text {
+    margin-left: 10px;
+}
+
+/* Blog */
+.content05 {
+    background-color: #f5f5f5;
+    padding: 50px 0 30px 0;
+}
+
+.content05__caption {
+    margin-left: 150px;
+    position: relative;
+}
+
+.content05__caption::before {
+    content: "Blog";
+    font-family: 'Handlee', cursive;
+    position: absolute;
+    top: -20px;
+    color: #b31767;
+}
+
+.content05__contena {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+}
+
+.content05__card {
+    position: relative;
+    width: 30%;
+    margin: 50px 0;
+    background-color: #fff;
+}
+
+.content05__img {
+    width: 100%;
+}
+
+.content05__card::before {
+    content: "";
+    background-color: #b31767;
+    width: 20%;
+    height: 10%;
+    position: absolute;
+}
+
+.content05__card::after {
+    content: "Blog";
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.content05__card__tit {
+    color: #747474;
+    margin: 20px;
+}
+
+.content05__card__tag {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.content05__card__tag--date {
+    color: #b2b2b2;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.content05__card__tag--tag {
+    color: #b2b2b2;
+    display: inline-block;
+    font-size: 12px;
+    text-align:
+}
+
+.content05__button {
+    width: 200px;
+    padding: 20px 0;
+    color: #b31767;
+    border: solid 2px #b31767;
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px auto 30px auto;
+    display: block;
+    font-size: 20px;
+}
+
+a.content05__button {
+    text-decoration: none;
+}
+
+/* Company */
+.content06 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content06__caption {
+    position: relative;
+}
+
+.content06__caption::before {
+    content: "Company";
+    font-family: 'Handlee', cursive;
+    position: absolute;
+    top: -20px;
+    color: #b31767;
+}
+
+.content06__table {
+    margin-top: 30px;
+}
+
+table.content06__table th {
+    width: 200px;
+    height: 50px;
+    color: #747474;
+    background-color: #f5f5f5;
+    border: 1px solid #a1a1a1;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+table.content06__table td {
+    width: 400px;
+    color: #747474;
+    background-color: #fcfcfc;
+    border: 1px solid #a1a1a1;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+/* Contact */
+.content07 {
+    margin-top: 70px;
+}
+
+.content07__img {
+    display: flex;
+}
+
+.content07__info {
+    display: block;
+    position: relative;
+    background: url(../img/recruit.png) no-repeat center/cover;
+    height: 40vh;
+    width: 50vw;
+}
+
+.content07__info--a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+}
+
+a.content07__info--a {
+    text-decoration: none;
+}
+
+.content07__interview {
+    display: block;
+    position: relative;
+    background: url(../img/interview.png) no-repeat center/cover;
+    height: 40vh;
+    width: 50vw;
+}
+
+.content07__interview--a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+}
+
+a.content07__interview--a {
+    text-decoration: none;
+}
+
+.content07__comment {
+    margin-top: 50px;
+    text-align: center;
+    color: #747474;
+    font-size: 18px;
+    position: relative;
+}
+
+.content07__comment::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 35px;
+    background-color: #b31767;
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+}
+
+.content07__button {
+    position: relative;
+    width: 250px;
+    background: linear-gradient(90deg, #e91c8d, #7e0644);
+    box-shadow: 0px 8px 3px #840151;
+    padding: 20px 0;
+    color: #fff;
+    border-radius: 35px;
+    text-align: center;
+    margin: 70px auto 30px auto;
+    display: block;
+    font-size: 16px;
+}
+
+a.content07__button {
+    text-decoration: none;
+}
+
+.content07__button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    background: url(../img/mailicon.svg) no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    transform: translate(0, -50%);
+}
+
+/* footer */
+.footer {
+    color: #d1d1d1;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    vertical-align: middle;
+}
