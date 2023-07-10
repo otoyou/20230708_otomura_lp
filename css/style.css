@@ -18,10 +18,8 @@
     color: #747474;
     font-size: 20px;
 }
-
 body {
     max-width: 1500px;
-    /*min-width: 1000px;*/
     margin: auto;
 }
 
@@ -261,8 +259,9 @@ table.content02__table th {
 /* Service */
 .content04 {
     padding: 50px 10% 0 10%;
-    /*margin-bottom: 50px;*/
-    margin: 50px auto 50px auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .content04__caption {
